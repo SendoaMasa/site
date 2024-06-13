@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cookies and privacy
-language: es
+language: ca
 permalink: /about/cookies-and-privacy/
 ---
 The following is a description of what data is collected when you use this website and what it is used for.

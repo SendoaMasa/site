@@ -1,7 +1,7 @@
 ---
 title: About
-language: ca
-language: /about/
+language: en
+permalink: /about/
 layout: page
 ---
 ## Table of contents

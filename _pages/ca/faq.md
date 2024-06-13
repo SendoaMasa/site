@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions (FAQ)
-language: es
+language: ca
 permalink: /faq/
 layout: page
 ---
