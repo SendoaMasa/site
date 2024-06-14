@@ -2,7 +2,7 @@
 layout: news
 title: News & Events
 language: ca
-permalink: /news/
+permalink: /ca/news/
 ---
 
 ## News and Events
