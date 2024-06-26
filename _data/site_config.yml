@@ -22,8 +22,8 @@ breadcrumbs:
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Euskadi
+  adjective: Euskaldun
 create_goals:
   previous_next_links: false
   goal_content_heading: ''
@@ -149,7 +149,39 @@ languages:
   
 languages_public: []
 logos: []
-map_layers: []
+map_layers: 
+  -
+    # This can be a local relative path or a remote URL.
+    geojson_file: https://sendoamasa.github.io/data/EAE.geojson
+    # This is the property in the GeoJSON that holds the name of the region.
+    name_property: EAE
+    # This is the property in the GeoJSON that holds the "geocode" of the region.
+    id_property: EAE01
+    # This controls the subfolder that the GeoJSON file will be created in.
+    output_subfolder: EAE
+    # This adds a prefix to all the GeoJSON filenames.
+    filename_prefix: indicator_
+  -
+    # Add any number of additional layers, such as one for counties.
+    geojson_file:  https://sendoamasa.github.io/data/Comarca.geojson
+    name_property: Comarca
+    id_property: Comarca01
+    output_subfolder: Comarcas
+    filename_prefix: indicator_
+  -
+    # Add any number of additional layers, such as one for counties.
+    geojson_file:  https://sendoamasa.github.io/data/Territorio.geojson
+    name_property: Territorio
+    id_property: Territorio01
+    output_subfolder: Territorios
+    filename_prefix: indicator_
+  -
+    # Add any number of additional layers, such as one for counties.
+    geojson_file:  https://sendoamasa.github.io/data/Municipio.geojson
+    name_property: Municipio
+    id_property: Municipio01
+    output_subfolder: Municipios
+    filename_prefix: indicator_
 map_options:
   disaggregation_controls: false
   minZoom: 5
