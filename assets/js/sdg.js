@@ -3282,7 +3282,7 @@ var mapView = function () {
     $('#map').sdgMap({
       indicatorId: indicatorId,
       mapOptions: {"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
-      mapLayers: [],
+      mapLayers: [{"geojson_file":"https://sendoamasa.github.io/data/EAE.geojson","name_property":"EAE","id_property":"EAE01","output_subfolder":"EAE","filename_prefix":"indicator_"},{"geojson_file":"https://sendoamasa.github.io/data/Comarca.geojson","name_property":"Comarca","id_property":"Comarca01","output_subfolder":"Comarcas","filename_prefix":"indicator_"},{"geojson_file":"https://sendoamasa.github.io/data/Territorio.geojson","name_property":"Territorio","id_property":"Territorio01","output_subfolder":"Territorios","filename_prefix":"indicator_"},{"geojson_file":"https://sendoamasa.github.io/data/Municipio.geojson","name_property":"Municipio","id_property":"Municipio01","output_subfolder":"Municipios","filename_prefix":"indicator_"}],
       precision: precision,
       precisionItems: precisionItems,
       decimalSeparator: decimalSeparator,
