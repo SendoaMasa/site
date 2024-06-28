@@ -168,8 +168,8 @@ map_options:
   disaggregation_controls: true
   minZoom: 5
   maxZoom: 10
-  #tileURL: ''
-  #tileOptions:
+  tileURL: NULL
+  tileOptions: NULL
   #  id: ''
   #  accessToken: ''
   #  attribution: ''
