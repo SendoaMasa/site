@@ -50,7 +50,16 @@ data_edit_url: data
 data_fields:
   units: ''
   series: ''
-date_formats: []
+date_formats: 
+  - type: standard
+    language: en
+    format: '%B %d, %Y'
+  - type: standard
+    language: es
+    format: '%d de %B de %Y'
+  - type: standard
+    language: eu
+    format: '%Y %B %d'
 disclaimer:
   phase: ''
   message: ''
@@ -149,30 +158,22 @@ languages:
   
 languages_public: []
 logos: []
-map_layers: 
-  -
-    # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
-    subfolder: regions
-    # This can be a local relative path or a remote URL.
-    geojson_file: data/Territorio.geojson
-    # This is the property in the GeoJSON that holds the name of the region.
-    name_property: Nombre
-    # This is the property in the GeoJSON that holds the "geocode" of the region.
-    id_property: ID
-    # This controls the subfolder that the GeoJSON file will be created in.
-    output_subfolder: geojson/regions/
-    # This adds a prefix to all the GeoJSON filenames.
-    filename_prefix: indicator_
+map_layers:
+  - subfolder: regions
+    label: indicator.regions
+    min_zoom: 5
+    max_zoom: 10
+    staticBorders: false
   
 map_options:
-  disaggregation_controls: false
+  disaggregation_controls: true
   minZoom: 5
   maxZoom: 10
-  tileURL: NULL
-  tileOptions: NULL
-  #  id: ''
-  #  accessToken: ''
-  #  attribution: ''
+  tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+  tileOptions:
+    id: ''
+    accessToken: ''
+    attribution: My map attribution
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
