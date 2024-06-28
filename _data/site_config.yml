@@ -165,7 +165,7 @@ map_layers:
     filename_prefix: indicator_
   
 map_options:
-  disaggregation_controls: true
+  disaggregation_controls: false
   minZoom: 5
   maxZoom: 10
   tileURL: NULL
