@@ -154,11 +154,11 @@ map_layers:
     # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
     subfolder: regions
     # This can be a local relative path or a remote URL.
-    geojson_file: https://sendoamasa.github.io/data/Territorio.geojson
+    geojson_file: data/Territorio.geojson
     # This is the property in the GeoJSON that holds the name of the region.
-    name_property: Territorio
+    name_property: Nombre
     # This is the property in the GeoJSON that holds the "geocode" of the region.
-    id_property: Territorio
+    id_property: ID
     # This controls the subfolder that the GeoJSON file will be created in.
     output_subfolder: geojson/regions/
     # This adds a prefix to all the GeoJSON filenames.
