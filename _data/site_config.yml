@@ -165,14 +165,14 @@ map_layers:
     filename_prefix: indicator_
   
 map_options:
-  disaggregation_controls: false
+  disaggregation_controls: true
   minZoom: 5
   maxZoom: 10
-  tileURL: ''
-  tileOptions:
-    id: ''
-    accessToken: ''
-    attribution: ''
+  #tileURL: ''
+  #tileOptions:
+  #  id: ''
+  #  accessToken: ''
+  #  attribution: ''
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
