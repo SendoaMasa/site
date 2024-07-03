@@ -2808,3 +2808,38 @@ body.contrast-high #search-bar-on-page button:hover {
 
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
+
+header {
+  background: none; }
+  header .container {
+    min-height: 113px; }
+    header .container .navbar-default {
+      border: none; }
+
+header.barra_azul_cab {
+  background: #013161 no-repeat scroll left bottom !important; }
+
+.logoMaster {
+  position: absolute;
+  top: 0px;
+  /* width: 84%; */
+  left: 1%; }
+
+.logoMaster a {
+  display: inline-block;
+  vertical-align: middle; }
+
+.logoMasterDescripcion {
+  border-left: 1px solid #fdbd03;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 6px;
+  padding-left: 0.6rem;
+  margin-left: 4px;
+  margin-left: 0.4rem;
+  line-height: 13px;
+  line-height: 1.3rem;
+  display: inline-block;
+  vertical-align: middle; }
