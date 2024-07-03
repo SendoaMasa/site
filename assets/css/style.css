@@ -2809,6 +2809,10 @@ body.contrast-high #search-bar-on-page button:hover {
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
 
+body {
+  background: white;
+  padding-top: 0; }
+
 header {
   background: none; }
   header .container {
