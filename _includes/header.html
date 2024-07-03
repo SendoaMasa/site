@@ -1,0 +1,49 @@
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+
+
+<header class="barra_azul_cab" role="banner">
+  <div class="container">
+    <div id="logoMaster" class="logoMaster">
+      <a id="ctl00_Cabecera_enlaceHome" data-ajax="false" >
+        <img src="https://eu.eustat.eus/cwImages/2015/logocabecera.png" alt="eustat">
+      </a><div class="logoMasterDescripcion">
+        Euskal Estatistika Erakundea<br>Instituto Vasco de Estadística					
+      </div>
+    </div>
+
+  <div class='hidden visible-xs float-right'>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul>
+  </div>
+
+    <nav class="navbar navbar-default" id="main-nav">
+
+      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu">
+        <li {% if page.permalink contains "/reporting-status/" or page.permalink contains "/news" or page.permalink contains "/about" or page.layout=="post"  or page.permalink contains "/faq"  or page.permalink contains "/publications" or page.permalink contains "/guidance" %}class="nav-link"
+          {% else %}class="nav-link active" {% endif %}>
+          <a href="{{ site.baseurl }}/">Goals</a>
+        </li>
+        <li {% if page.permalink=="/reporting-status/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+          <a href="{{ site.baseurl }}/reporting-status">Reporting Status</a>
+        </li>
+        <li {% if page.permalink=="/about/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+          <a href="{{ site.baseurl }}/about">About</a>
+        <li {% if page.permalink=="/publications/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+            <a href="{{ site.baseurl }}/publications">Publications</a>
+        </li>
+        <li {% if page.permalink=="/guidance/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+          <a href="{{ site.baseurl }}/guidance">Guidance</a>
+        </li>
+        <li {% if page.permalink=="/faq/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+          <a href="{{ site.baseurl }}/faq">FAQ</a>
+        </li>
+<!--        <li {% if page.permalink contains "/news" or page.layout=="post" %}class="nav-link active" {% else %}class="nav-link" {%
+          endif %}>
+          <a href="{{ site.baseurl }}/news">News &amp; Events</a>
+        </li> -->
+      </ul>
+
+
+    </nav>
+  </div>
+
+</header>
