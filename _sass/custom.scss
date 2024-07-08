@@ -8,17 +8,9 @@ header {
     }
   }
 }
-
-header.barra_azul_cab {
+header .barra_azul_cab {
   background: #013161 no-repeat scroll left bottom !important;
 }
-.logoMaster {
-  position: absolute;
-  top: 0px;
-  /* width: 84%; */
-  left: 1%;
-}
-
 .logoMaster a {
   display: inline-block;
   vertical-align: middle;
