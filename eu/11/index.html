@@ -142,7 +142,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240708125612">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240709054341">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1016,47 +1016,84 @@ layout-goal
 
 
 <footer role="contentinfo">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div id="footerLinks">
-                    <ul>
-                        <li>
-                            <a href="https://open-sdg.org">Open SDGrekin eraikia</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/site/eu/contact-us">Kontaktatu</a>
-                            
-                        </li>
-                        <li>
-                            
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
-                            
-                        </li>
-                        <li>
-                            
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                            
-                        </li>
-                        <li>
-                            <a href="/site/eu/about/cookies-and-privacy/">Cookieak</a>
-                            
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <a href="/site/eu/config">Configuration</a>
-                        </li>
-                        </ul>
-                </div>
-            </div>
+  <div class="pieEustat">
+    <div class="marcopie">
+      <div class="row">
+        <div class="col-sx-12 col-sm-1 col-md-1 col-lg-1">
         </div>
-        
+        <div class="col-sx-12 col-sm-4 col-md-2 col-lg-3 ">
+          <div class="centradomini">
+            <ul class="list-group iconillo rupturasmall">
+              <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL01_01" class="list-group-item2 enlaceblanco"
+                  data-ajax="false" href="https://www.eustat.eus/about/links_c.html">Enlaces</a></li>
+              <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL01_02" class="list-group-item2 enlaceblanco"
+                  data-ajax="false" href="https://www.eustat.eus/faq_c.html">FAQ</a></li>
+              <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL01_03" class="list-group-item2 enlaceblanco"
+                  data-ajax="false" href="https://www.eustat.eus/sitemap_c.html">Mapa</a></li>
+              <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL01_04" class="list-group-item2 enlaceblanco"
+                  data-ajax="false" href="https://www.eustat.eus/accesibilidad_c.html">Accesibilidad</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sx-12 col-sm-4 col-md-2 col-lg-3 ">
+          <div class="centradomini">
+            <div class="Prayamini"></div>
+            <ul class="list-group iconillo rupturasmall">
+              <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL02_01" class="list-group-item2 enlaceblanco"
+                  data-ajax="false" href="/about/a_eustat_c.html">Acerca de Eustat</a></li>
+              <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL02_02" class="list-group-item2 enlaceblanco"
+                  data-ajax="false" href="https://euskadi.eus/">Sede electrónica</a></li>
+              <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL02_03" class="list-group-item2 enlaceblanco"
+                  data-ajax="false" href="https://www.eustat.eus/privacidad_c.html">Privacidad</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div class="col-sx-1 col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="col-sx-10 col-sm-10 col-md-5 col-lg-5 barritaizquierda">
+          <div class="piederecho">
+            <div class="logoaenorpie">
+              <a id="ctl00_Pie_pieCOL03_07" data-ajax="false" href="https://www.eustat.eus/about/aenor_c.html"><img
+                  src="https://www.eustat.eus/cwImages/2015/aenor_2022_c.png" alt="AENOR" style="border-width:0px;"></a>
+              <a id="ctl00_Pie_pieCOL03_07b" data-ajax="false" href="https://www.eustat.eus/about/aenor_c.html"><img
+                  src="https://www.eustat.eus/cwImages/2015/logo_ENS_2022.png" alt="AENOR" style="border-width:0px;"></a>
+            </div>
+            <p class="piederechopn">Eustat - Euskal Estatistika Erakundea - Instituto Vasco de Estadística</p>
+            <p class="piederechop">Eustat es el organismo público que desarrolla, produce y difunde información
+              estadística oficial de la C.A. de Euskadi</p>
+            <p class="piederechop piederechop50">
+              c/Donostia - San Sebastián, 1<br>
+              01010 Vitoria-Gasteiz<br>
+              Tfno: (+34) 945017500<br>
+              Fax: (+34) 945017501<br>
+              webmaster_eustat@eustat.eus
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </footer>
 
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<!-- <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script> -->
+<!-- Google Analytics -->
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  
+
+  
+</script>
+
+<!-- /.container </div> -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -1082,16 +1119,16 @@ layout-goal
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Bilatu';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240708125612'></script>
+<script src='/site/assets/js/sdg.js?v=20240709054341'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240708125612"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240709054341"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
 
-
 </body>
+
 </html>
