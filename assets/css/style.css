@@ -2873,3 +2873,10 @@ body {
 .piederechop50 {
   width: 50%;
   float: right; }
+
+.enlaceblanco {
+  color: white !important;
+  text-decoration: none; }
+
+ul.iconillo {
+  list-style-image: url(https://www.eustat.eus/cwImages/2015/listapie.gif); }
