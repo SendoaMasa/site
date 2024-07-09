@@ -13,50 +13,101 @@
     </div>
   </div>
   <div class="container">
-    <a class="navbar-brand" href="{{ site.baseurl }}/" id="home">
-      <img src="{{ site.baseurl }}/assets/img/SDG_logo.png"
-        alt="Sustainable Development Goals - 17 Goals to Transform our World" />
-    </a>
-    <div class='hidden visible-xs float-right'>
-      <ul id='accessibility-nav' class='contrast-switcher'></ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+      <a class="navbar-brand" href="{{ site.baseurl }}/" id="home" aria-label="Ir a la página de inicio"
+        title="Ir a la página de inicio">
+        <img src="{{ site.baseurl }}/assets/img/SDG_logo.png"
+          alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Mostrar el menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex flex-wrap w-100 justify-content-between">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu">
+            <li {% if page.permalink contains "/reporting-status/" or page.permalink contains "/news" or page.permalink
+              contains "/about" or page.layout=="post" or page.permalink contains "/faq" or page.permalink
+              contains "/publications" or page.permalink contains "/guidance" %}class="nav-link" {% else
+              %}class="nav-link active" {% endif %}>
+              <a href="{{ site.baseurl }}/">Goals</a>
+            </li>
+            <li {% if page.permalink=="/reporting-status/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+              <a href="{{ site.baseurl }}/reporting-status">Reporting Status</a>
+            </li>
+            <li {% if page.permalink=="/about/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+              <a href="{{ site.baseurl }}/about">About</a>
+            <li {% if page.permalink=="/publications/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+              <a href="{{ site.baseurl }}/publications">Publications</a>
+            </li>
+            <li {% if page.permalink=="/guidance/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+              <a href="{{ site.baseurl }}/guidance">Guidance</a>
+            </li>
+            <li {% if page.permalink=="/faq/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
+              <a href="{{ site.baseurl }}/faq">FAQ</a>
+            </li>
+            <!--        <li {% if page.permalink contains "/news" or page.layout=="post" %}class="nav-link active" {% else %}class="nav-link" {%
+              endif %}>
+              <a href="{{ site.baseurl }}/news">News &amp; Events</a>
+            </li> -->
+          </ul>
 
-    <nav class="navbar navbar-default" id="main-nav">
+        </div>
+        <div class="header-search-bar">
+          <form class="align-self-lg-end" id="search" action="{{ site.baseurl }}/es/search/">
+            <div class="input-group">
+              <label class="visually-hidden" for="indicator_search">Buscar</label>
+              <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
+              <span class="input-group-append">
+                <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar en el sitio" id="search-btn"
+                  type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
 
-      <ul class="top-level">
-        <li><span data-target="menu">Menu</span></li>
-        <li><span data-target="search">Search</span></li>
-      </ul>
+        </div>
+        <div class="header-toggles d-flex">
 
-      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu">
-        <li {% if page.permalink contains "/reporting-status/" or page.permalink contains "/news" or page.permalink
-          contains "/about" or page.layout=="post" or page.permalink contains "/faq" or page.permalink
-          contains "/publications" or page.permalink contains "/guidance" %}class="nav-link" {% else
-          %}class="nav-link active" {% endif %}>
-          <a href="{{ site.baseurl }}/">Goals</a>
-        </li>
-        <li {% if page.permalink=="/reporting-status/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-          <a href="{{ site.baseurl }}/reporting-status">Reporting Status</a>
-        </li>
-        <li {% if page.permalink=="/about/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-          <a href="{{ site.baseurl }}/about">About</a>
-        <li {% if page.permalink=="/publications/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-          <a href="{{ site.baseurl }}/publications">Publications</a>
-        </li>
-        <li {% if page.permalink=="/guidance/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-          <a href="{{ site.baseurl }}/guidance">Guidance</a>
-        </li>
-        <li {% if page.permalink=="/faq/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-          <a href="{{ site.baseurl }}/faq">FAQ</a>
-        </li>
-        <!--        <li {% if page.permalink contains "/news" or page.layout=="post" %}class="nav-link active" {% else %}class="nav-link" {%
-          endif %}>
-          <a href="{{ site.baseurl }}/news">News &amp; Events</a>
-        </li> -->
-      </ul>
+          <div class="language-toggle-container">
+
+            <div class="btn-group language-toggle-dropdown  dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-globe"></i>
+                Español
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="{{ site.baseurl }}/">
+                    English
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
 
+
+          <span class="no-js-language-toggle">
+            <div class="language-toggle-container d-flex">
+              <i class="fa fa-globe language-toggle-globe-links"></i>
+              <ul class="language-toggle-links list-unstyled list-inline">
+                <li class="language-option-en list-inline-item">
+                  <a class="language-toggle-link" href="{{ site.baseurl }}/">
+                    English
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </span><a title="Habilitar alto contraste" aria-label="Habilitar alto contraste"
+            data-contrast-switch-to="high" role="button" href="javascript:void(0)" data-on="click"
+            data-event-category="Accessibility" data-event-action="Change contrast setting"
+            data-event-label="high">A</a>
+        </div>
+      </div>
     </nav>
+    
   </div>
 
 </header>
