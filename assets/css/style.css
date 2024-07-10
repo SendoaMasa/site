@@ -2837,7 +2837,9 @@ header .barra_azul_cab {
 
 #lateralD_ham {
   position: absolute;
-  right: 0px; }
+  right: 0px;
+  top: 0px;
+  padding-right: 1%; }
 
 * {
   font-family: 'Open Sans', sans-serif !important;
