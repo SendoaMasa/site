@@ -1,113 +1,46 @@
-<header role="banner">
-  <div class="barra_azul_cab">
-    <div id="logoMaster" class="logoMaster">
-      <a id="ctl00_Cabecera_enlaceHome" data-ajax="false" href="/indice.html">
-        <img src="https://www.eustat.eus/cwImages/2015/logocabecera.png" alt="eustat">
-      </a>
-      <div class="logoMasterDescripcion">
-        Euskal Estatistika Erakundea<br>Instituto Vasco de Estadística
-      </div>
-    </div>
-    <div id="lateralD_ham">
-      <img src="https://www.eustat.eus/cwImages/2015/euskadieus.png" alt="euskadi.eus" id="logoEuskadiEus">
-    </div>
-  </div>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-      <a class="navbar-brand" href="{{ site.baseurl }}/" id="home" aria-label="Ir a la página de inicio"
-        title="Ir a la página de inicio">
-        <img src="{{ site.baseurl }}/assets/img/SDG_logo.png"
-          alt="Objetivos de Desarrollo Sostenible - 17 Objetivos para transformar nuestro mundo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Mostrar el menú de navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="d-flex flex-wrap w-100 justify-content-between">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu">
-            <li {% if page.permalink contains "/reporting-status/" or page.permalink contains "/news" or page.permalink
-              contains "/about" or page.layout=="post" or page.permalink contains "/faq" or page.permalink
-              contains "/publications" or page.permalink contains "/guidance" %}class="nav-link" {% else
-              %}class="nav-link active" {% endif %}>
-              <a href="{{ site.baseurl }}/">Goals</a>
-            </li>
-            <li {% if page.permalink=="/reporting-status/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-              <a href="{{ site.baseurl }}/reporting-status">Reporting Status</a>
-            </li>
-            <li {% if page.permalink=="/about/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-              <a href="{{ site.baseurl }}/about">About</a>
-            <li {% if page.permalink=="/publications/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-              <a href="{{ site.baseurl }}/publications">Publications</a>
-            </li>
-            <li {% if page.permalink=="/guidance/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-              <a href="{{ site.baseurl }}/guidance">Guidance</a>
-            </li>
-            <li {% if page.permalink=="/faq/" %}class="nav-link active" {% else %}class="nav-link" {% endif %}>
-              <a href="{{ site.baseurl }}/faq">FAQ</a>
-            </li>
-            <!--        <li {% if page.permalink contains "/news" or page.layout=="post" %}class="nav-link active" {% else %}class="nav-link" {%
-              endif %}>
-              <a href="{{ site.baseurl }}/news">News &amp; Events</a>
-            </li> -->
-          </ul>
+{% include multilingual-js.html key="header" %}
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">{{ page.t.header.skip_link }}</a>
+{% include components/header/internet-explorer-message.html %}
+<div id="disclaimer">
+    {% include components/dev-disclaimer.html %}
+</div>
 
-        </div>
-        <div class="header-search-bar">
-          <form class="align-self-lg-end" id="search" action="{{ site.baseurl }}/es/search/">
-            <div class="input-group">
-              <label class="visually-hidden" for="indicator_search">Buscar</label>
-              <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
-              <span class="input-group-append">
-                <button class="btn btn-outline-secondary ms-n5" aria-label="Buscar en el sitio" id="search-btn"
-                  type="submit">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-          </form>
-
-        </div>
-        <div class="header-toggles d-flex">
-
-          <div class="language-toggle-container">
-
-            <div class="btn-group language-toggle-dropdown  dropdown">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-globe"></i>
-                Español
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="{{ site.baseurl }}/">
-                    English
-                  </a>
-                </li>
-              </ul>
-            </div>
+<header role="banner" class="">
+    <div class="barra_azul_cab">
+        <div id="logoMaster" class="logoMaster">
+          <a id="ctl00_Cabecera_enlaceHome" data-ajax="false" href="/indice.html">
+            <img src="https://www.eustat.eus/cwImages/2015/logocabecera.png" alt="eustat">
+          </a>
+          <div class="logoMasterDescripcion">
+            Euskal Estatistika Erakundea<br>Instituto Vasco de Estadística
           </div>
-
-
-
-          <span class="no-js-language-toggle">
-            <div class="language-toggle-container d-flex">
-              <i class="fa fa-globe language-toggle-globe-links"></i>
-              <ul class="language-toggle-links list-unstyled list-inline">
-                <li class="language-option-en list-inline-item">
-                  <a class="language-toggle-link" href="{{ site.baseurl }}/">
-                    English
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </span><a title="Habilitar alto contraste" aria-label="Habilitar alto contraste"
-            data-contrast-switch-to="high" role="button" href="javascript:void(0)" data-on="click"
-            data-event-category="Accessibility" data-event-action="Change contrast setting"
-            data-event-label="high">A</a>
+        </div>
+        <div id="lateralD_ham">
+          <img src="https://www.eustat.eus/cwImages/2015/euskadieus.png" alt="euskadi.eus" id="logoEuskadiEus">
         </div>
       </div>
-    </nav>
-    
-  </div>
-
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            {% include components/header/logo.html %}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ page.t.header.show_menu }}">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    {% include navigation.html dropdowns=true %}
+                </div>
+                <div class="header-search-bar">
+                    {% include search.html %}
+                </div>
+                <div class="header-toggles d-flex">
+                    {%- if site.languages.size > 1 and site.header_language_toggle != 'none' -%}
+                    {% include components/language-toggle.html %}
+                    <span class="no-js-language-toggle">{% include components/language-toggle-links.html %}</span>
+                    {%- endif -%}
+                    {% include components/contrast-toggle.html %}
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
+{% include components/page-top.html %}
