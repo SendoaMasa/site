@@ -157,7 +157,16 @@ languages:
   - en
   
 languages_public: []
-logos: []
+logos: 
+  - language: es
+    src: /SDG_logo.png
+    alt: Ir a la página de inicio
+  - language: eu
+    src: /eu/SDG_logo.png
+    alt: Joan hasierako orrira
+  - language: en
+    src: /en/SDG_logo.png
+    alt: Go to homepage
 map_layers:
   - subfolder: regions
     label: indicator.regions
@@ -274,6 +283,3 @@ use_new_config_forms: false
 validate_indicator_config: false
 validate_site_config: false
 x_axis_label: ''
-logo_frontpage:
-  url_base: 'https://sendoamasa.github.io/site/assets/img/goals'
-  hidden: false
