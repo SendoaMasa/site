@@ -159,13 +159,13 @@ languages:
 languages_public: []
 logos: 
   - language: es
-    src: /SDG_logo.png
+    src: assets/img/SDG_logo.png
     alt: Ir a la página de inicio
   - language: eu
-    src: /eu/SDG_logo.png
+    src: assets/img/eu/SDG_logo.png
     alt: Joan hasierako orrira
   - language: en
-    src: /en/SDG_logo.png
+    src: assets/img/en/SDG_logo.png
     alt: Go to homepage
 map_layers:
   - subfolder: regions
