@@ -2841,11 +2841,6 @@ header .barra_azul_cab {
   top: 0px;
   padding-right: 1%; }
 
-* {
-  font-family: 'Open Sans', sans-serif !important;
-  color: #1a1a1a;
-  letter-spacing: -0.04em !important; }
-
 body {
   background: white;
   padding-top: 0; }
