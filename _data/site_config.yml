@@ -25,7 +25,7 @@ country:
   name: Euskadi
   adjective: Euskaldun
 create_goals:
-  layout: goal-by-target-vertical #goal-with-progress
+  layout: goal-with-progress
   previous_next_links: true
   goal_content_heading: ''
   goals: []
