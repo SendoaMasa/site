@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240910100917">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240910102242">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -196,18 +196,18 @@ layout-categories
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/site/">Inicio</a>
+    <a class="nav-link" href="/site/es/">Inicio</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/reporting-status">Estado de informes</a>
+    <a class="nav-link" href="/site/es/reporting-status">Estado de informes</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/news">Actualizaciones</a>
+    <a class="nav-link" href="/site/es/news">Actualizaciones</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/faq">FAQ</a>
+    <a class="nav-link" href="/site/es/faq">FAQ</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/site/search/">
+                    <form class="align-self-lg-end" id="search" action="/site/es/search/">
     <div class="input-group">
         <label class="visually-hidden" for="indicator_search">Buscar</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
@@ -234,7 +234,7 @@ layout-categories
       Español
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/site/eu/categories/">
+            <a class="dropdown-item" href="/site/categories/">
               Euskera
             </a>
           </li><li>
@@ -249,14 +249,14 @@ layout-categories
 
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-eu list-inline-item">
+            <a class="language-toggle-link" href="/site/categories/">
+                Euskera
+            </a>
+        </li><li class="language-option-es list-inline-item">
             <span class="language-toggle-active-language">
                 Español
             </span>
-        </li><li class="language-option-eu list-inline-item">
-            <a class="language-toggle-link" href="/site/eu/categories/">
-                Euskera
-            </a>
         </li><li class="language-option-en list-inline-item">
             <a class="language-toggle-link" href="/site/en/categories/">
                 English
@@ -280,7 +280,7 @@ data-event-label="high"
   <nav>
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         <li class="breadcrumb-item" >
-            <a href="/site/">Inicio</a>
+            <a href="/site/es/">Inicio</a>
         </li>
         <li class="breadcrumb-item active">Categories</li>
     </ol>
@@ -304,10 +304,6 @@ data-event-label="high"
               <time datetime="2020-01-10T00:00:00+00:00" itemprop="datePublished">10 de enero de 2020</time> - <a href="/site/es/test-post-1/">Test Post 1</a>
             </article>
             
-            <article class="archive-item">
-              <time datetime="2020-01-10T00:00:00+00:00" itemprop="datePublished">10 de enero de 2020</time> - <a href="/site/ca/test-post-1/">Test Post 1</a>
-            </article>
-            
           </div>
         </div>
       
@@ -326,7 +322,7 @@ data-event-label="high"
                         </li>
                         
                         <li>
-                            <a href="/site/contact-us">Contáctenos</a>
+                            <a href="/site/es/contact-us">Contáctenos</a>
                             
                         </li>
                         <li>
@@ -340,14 +336,14 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/site/about/cookies-and-privacy/">Galletas</a>
+                            <a href="/site/es/about/cookies-and-privacy/">Galletas</a>
                             
                         </li>
                         
                         
                         
                         <li>
-                            <a href="/site/config">Configuration</a>
+                            <a href="/site/es/config">Configuration</a>
                         </li>
                         </ul>
                 </div>
@@ -438,12 +434,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240910100917'></script>
+<script src='/site/assets/js/sdg.js?v=20240910102242'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240910100917"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240910102242"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
