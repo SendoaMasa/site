@@ -13,10 +13,25 @@ header .barra_azul_cab {
   background: #013161 no-repeat scroll left bottom !important;
   padding-left: 1%;
 }
+/* LOGO HOME */
+
+.wLogoMaster {
+  width: auto;
+}
+
+.logoMaster {
+  position: absolute;
+  top: 0px;
+  /* width: 84%; */
+  left: 1%;
+}
+
 .logoMaster a {
   display: inline-block;
   vertical-align: middle;
 }
+/* LOGO HOME - FIN */
+
 .logoMasterDescripcion {
   border-left: 1px solid #fdbd03;
   color: #FFFFFF;
