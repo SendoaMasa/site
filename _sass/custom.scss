@@ -106,3 +106,9 @@ ul.iconillo {
 .tag-my-tag{
     background-color: #fd8d03!important;
 }
+
+@media only screen and (min-width: 300px) {
+  .logoMasterDescripcion {
+      display: none;
+  }
+}
