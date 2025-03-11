@@ -2826,7 +2826,7 @@ header .barra_azul_cab {
 
 .logoMaster {
   position: absolute;
-  top: 0px;
+  top: 50px;
   /* width: 84%; */
   left: 1%; }
 
@@ -2899,6 +2899,6 @@ ul.iconillo {
 .tag-my-tag {
   background-color: #fd8d03 !important; }
 
-@media only screen and (min-width: 300px) {
+@media (max-width: 420px) {
   .logoMasterDescripcion {
     display: none; } }
