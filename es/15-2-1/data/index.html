@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250311065158">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250311144155">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -174,146 +174,143 @@ layout-data-editor
     <p class="internet-explorer-message-body">Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.</p>
 </div>
 <header role="banner" class="">
-    <div class="barra_azul_cab">
-      <div id="pattern" class="pattern">
-        <div class="offcanvas-top" style="height: 50px;">
-          <div class="o-content">
-            <div class="zutabeak">
-              <div class="o-content-zutabe">
-                <ul>
-                <li><a id="ctl00_Cabecera_cabCOL01_01" data-ajax="false" href="https://www.eustat.eus/estadisticas/opt_0/id_All/temalista.html">Temas</a></li>
-                      <li><a id="ctl00_Cabecera_cabCOL01_02" data-ajax="false" href="https://www.eustat.eus/estadisticas/opt_1/id_All/temalista.html">Operaciones</a></li>
-                      <li><a id="ctl00_Cabecera_cabCOL01_03" data-ajax="false" href="https://www.eustat.eus/bancopx/spanish/indice.html">Banco de datos</a></li>
-                      <li><a id="ctl00_Cabecera_cabCOL01_04" data-ajax="false" onclick="cambiaTemasOperaciones(2);" href="https://www.eustat.eus/indice.html#cy">Coyuntura</a></li>
-                      <li><a id="ctl00_Cabecera_cabCOL01_05" data-ajax="false" href="https://www.eustat.eus/municipal/datos_estadisticos/info_territorial_c.asp">Info. municipal</a></li>
-                </ul>
-              </div><div class="o-content-zutabe">
-                <ul>
-                <li><a id="ctl00_Cabecera_cabCOL02_01" data-ajax="false" href="https://www.eustat.eus/estadisticas/calendario.html">Calendario</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL02_02" data-ajax="false" href="https://www.eustat.eus/productosServicios/sugerencias.html">Quejas y sugerencias</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL02_03" data-ajax="false" href="https://www.eustat.eusprodserv/info_c.html">Servicio de información</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL02_04" data-ajax="false" href="https://www.eustat.eus/notas_c.html">Servicio de prensa</a></li>
-                </ul>
-              </div><div class="o-content-zutabe">
-                <ul>
-                  <li>
-                  <span class="textoEnCabecera">
-                  Síganos:	
-                  </span>
-                  </li>
-                  <li class="idiomasmini">
-                    <script type="text/javascript">
-                      var strTitle = document.title;
-                      var strCurrUrl = window.location.href;
-                      
-                      function Prepare(t){
-                        á="a";é="e";í="i";ó="o";ú="u";ñ="n";Á="A";É="E";Í="I";Ó="O";Ú="U";Ñ="N";" ";"_";
-                        acentos=/[áéíóúñÁÉÍÓÚÑ]/g;
-                        return t.replace(acentos,function($1){return eval($1);});
-                      }
-                      
-                      strTitle = Prepare(strTitle);
-                      document.write("<a href='http://www.facebook.com/eustat' target='_blank' title='Facebook' style='display:inline-block;'><img class='sociales' src='https://www.eustat.eus/cwImages/2015/facebook.gif'/></a>");
-                      document.write("<a href='http://twitter.com/eustat' target='_blank' title='X' style='display:inline-block;'><img class='sociales' src='https://www.eustat.eus/cwImages/2015/X.gif'/></a>");
-                      document.write("<a href='https://www.youtube.com/user/eustat1986/' target='_blank' title='LinkedIn' style='display:inline-block;'><img class='sociales' src='https://www.eustat.eus/cwImages/2015/youtube.png'/></a>");
-                      document.write("<a href='https://www.eustat.eus/web/comun/extractorclobRSS.ashx?id=/rss/novedades_c.xml' target='_blank' title='Rss novedades' style='display:inline-block;'><img class='sociales' src='https://www.eustat.eushttps://www.eustat.eus/cwImages/2015/rss2.png'/></a>");
-                                        document.write("<a href='https://es.linkedin.com/company/eustat' target='_blank' title='' style='display:inline-block;'><img class='sociales' src='https://www.eustat.eus/cwImages/2015/linkedin.png'/></a>");
-                      
-                                    </script><a href="http://www.facebook.com/eustat" target="_blank" title="Facebook" style="display:inline-block;"><img class="sociales" src="https://www.eustat.eus/cwImages/2015/facebook.gif"></a><a href="http://twitter.com/eustat" target="_blank" title="X" style="display:inline-block;"><img class="sociales" src="https://www.eustat.eus/cwImages/2015/X.gif"></a><a href="https://www.youtube.com/user/eustat1986/" target="_blank" title="LinkedIn" style="display:inline-block;"><img class="sociales" src="https://www.eustat.eus/cwImages/2015/youtube.png"></a><a href="https://www.eustat.eus/web/comun/extractorclobRSS.ashx?id=/rss/novedades_c.xml" target="_blank" title="Rss novedades" style="display:inline-block;"><img class="sociales" src="https://www.eustat.eus/cwImages/2015/rss2.png"></a><a href="https://es.linkedin.com/company/eustat" target="_blank" title="" style="display:inline-block;"><img class="sociales" src="https://www.eustat.eus/cwImages/2015/linkedin.png"></a>
-                                </li>
-                </ul>
-              </div>
-              
-            </div><!-- zutabeak -->
-            
-          </div>			
-    
-          <div id="logoMaster" class="logoMaster wLogoMaster">
-            <a id="ctl00_Cabecera_enlaceHome" data-ajax="false" href="https://www.eustat.eus/indice.html">
-              <img src="https://www.eustat.eus/cwImages/2015/logocabecera.png" alt="eustat">
-            </a><div class="logoMasterDescripcion">
-              Euskal Estatistika Erakundea<br>Instituto Vasco de Estadística					
+  <div class="barra_azul_cab">
+    <div id="pattern" class="pattern">
+      <div class="offcanvas-top" style="height: 50px;">
+        <div class="o-content">
+          <div class="zutabeak">
+            <div class="o-content-zutabe">
+              <ul>
+                <li><a id="ctl00_Cabecera_cabCOL01_01" data-ajax="false"
+                    href="https://www.eustat.eus/estadisticas/opt_0/id_All/temalista.html">Temas</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_02" data-ajax="false"
+                    href="https://www.eustat.eus/estadisticas/opt_1/id_All/temalista.html">Operaciones</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_03" data-ajax="false"
+                    href="https://www.eustat.eus/bancopx/spanish/indice.html">Banco de datos</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_04" data-ajax="false" onclick="cambiaTemasOperaciones(2);"
+                    href="https://www.eustat.eus/indice.html#cy">Coyuntura</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_05" data-ajax="false"
+                    href="https://www.eustat.eus/municipal/datos_estadisticos/info_territorial_c.asp">Info.
+                    municipal</a></li>
+              </ul>
             </div>
-          </div>
-    
-          <div id="lateralD_ham">
-            <span id="trigger_home" class="trigger_itxitaXXX" title="Mostrar/ocultar menu principal"><img id="pHam" src="https://www.eustat.eus/cwImages/2015/aspa.png" alt="euskadi.eus"></span>
-          </div>
-    
-                  
-                  
-                  
-    
-    
+            <div class="o-content-zutabe">
+              <ul>
+                <li><a id="ctl00_Cabecera_cabCOL02_01" data-ajax="false"
+                    href="https://www.eustat.eus/estadisticas/calendario.html">Calendario</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL02_02" data-ajax="false"
+                    href="https://www.eustat.eus/productosServicios/sugerencias.html">Quejas y sugerencias</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL02_03" data-ajax="false"
+                    href="https://www.eustat.eusprodserv/info_c.html">Servicio de información</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL02_04" data-ajax="false"
+                    href="https://www.eustat.eus/notas_c.html">Servicio de prensa</a></li>
+              </ul>
+            </div>
+            <div class="o-content-zutabe">
+              <ul>
+                <li>
+                  <span class="textoEnCabecera">
+                    Síganos:
+                  </span>
+                </li>
+                <li class="idiomasmini">
+                  <a href="http://www.facebook.com/eustat" target="_blank" title="Facebook"
+                    style="display:inline-block;">
+                    <img class="sociales" src="https://www.eustat.eus/cwImages/2015/facebook.gif">
+                  </a>
+                  <a href="http://twitter.com/eustat" target="_blank" title="X" style="display:inline-block;">
+                    <img class="sociales" src="https://www.eustat.eus/cwImages/2015/X.gif">
+                  </a>
+                  <a href="https://www.youtube.com/user/eustat1986/" target="_blank" title="LinkedIn"  style="display:inline-block;">
+                    <img class="sociales" src="https://www.eustat.eus/cwImages/2015/youtube.png">
+                  </a>
+                  <a href="https://www.eustat.eus/web/comun/extractorclobRSS.ashx?id=/rss/novedades_c.xml" target="_blank" title="Rss novedades"  style="display:inline-block;">
+                    <img class="sociales" src="https://www.eustat.eus/cwImages/2015/rss2.png">
+                  </a>
+                  <a href="https://es.linkedin.com/company/eustat" target="_blank" title="" style="display:inline-block;">
+                    <img class="sociales" src="https://www.eustat.eus/cwImages/2015/linkedin.png">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div><!-- zutabeak -->
+
         </div>
+
+        <div id="logoMaster" class="logoMaster wLogoMaster">
+          <a id="ctl00_Cabecera_enlaceHome" data-ajax="false" href="https://www.eustat.eus/indice.html">
+            <img src="https://www.eustat.eus/cwImages/2015/logocabecera.png" alt="eustat">
+          </a>
+          <div class="logoMasterDescripcion">
+            Euskal Estatistika Erakundea<br>Instituto Vasco de Estadística
+          </div>
+        </div>
+
+        <div id="lateralD_ham">
+          <span id="trigger_home" class="trigger_itxitaXXX" title="Mostrar/ocultar menu principal"><img id="pHam"
+              src="https://www.eustat.eus/cwImages/2015/aspa.png" alt="euskadi.eus"></span>
+        </div>
+
+
+
+
+
+
       </div>
-    
-      <script type="text/javascript">
-      //$(window).load(function() {
-        (function(w){
-          var $container = $('.offcanvas-top'),
-          $cHeight = $('.o-content').outerHeight();
-          //alert($cHeight);
-          $(document).ready(function() {
-            buildCanvas();
-          });
-          function buildCanvas() {
-            $('#trigger_home').bind('click', function(e) {
-              e.preventDefault();
-              var $this = $(this);
-              $container.toggleClass('active');
-              if($container.hasClass('active')) {
-                $("#pHam").attr("src","https://www.eustat.eus/cwImages/2015/aspa.png");
-                $("#logoMaster").addClass("wLogoMaster");
-                $container.height($cHeight);
-              } else {
-                $("#pHam").attr("src","https://www.eustat.eus/cwImages/2015/ham.png");
-                $("#logoMaster").removeClass("wLogoMaster");
-                $container.height(50);
-              }
-            });
-          }
-          $(window).resize(function() { //On Window resizeBy(
-            $cHeight = $('.o-content').outerHeight();
-            //alert($cHeight);
-            //console.log($cHeight);
-          });
-        })(this);
-      //});
-    
-    
-      
-      
-      $(document).ready(function () {
-    
-          $(window).scroll(function () {
-              if ($(this).scrollTop() > 500) {
-                  $('.scrollup').fadeIn();
-              } else {
-                  $('.scrollup').fadeOut();
-              }
-          });
-    
-          $('.scrollup').click(function () {
-              $("html, body").animate({
-                  scrollTop: 0
-              }, 600);
-              return false;
-          });
-    
-      });
-    
+    </div>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+    var container = document.querySelector('.offcanvas-top');
+    var cHeight = document.querySelector('.o-content').offsetHeight;
+
+    function buildCanvas() {
+        document.getElementById('trigger_home').addEventListener('click', function (e) {
+            e.preventDefault();
+            container.classList.toggle('active');
+            if (container.classList.contains('active')) {
+                document.getElementById('pHam').src = "https://www.eustat.eus/cwImages/2015/aspa.png";
+                document.getElementById('logoMaster').classList.add('wLogoMaster');
+                container.style.height = cHeight + 'px';
+            } else {
+                document.getElementById('pHam').src = "https://www.eustat.eus/cwImages/2015/ham.png";
+                document.getElementById('logoMaster').classList.remove('wLogoMaster');
+                container.style.height = '50px';
+            }
+        });
+    }
+
+    buildCanvas();
+
+    window.addEventListener('resize', function () {
+        cHeight = document.querySelector('.o-content').offsetHeight;
+    });
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 500) {
+            document.querySelector('.scrollup').style.display = 'block';
+        } else {
+            document.querySelector('.scrollup').style.display = 'none';
+        }
+    });
+
+    document.querySelector('.scrollup').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
     </script>
-      </div>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Mostrar el menú de navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex flex-wrap w-100 justify-content-between">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+  </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Mostrar el menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex flex-wrap w-100 justify-content-between">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav" id="menu"><li class="nav-item ">
     <a class="nav-link" href="/site/es/">Inicio</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/site/es/reporting-status">Estado de informes</a>
@@ -323,9 +320,9 @@ layout-data-editor
     <a class="nav-link" href="/site/es/faq">FAQ</a>
 </li></ul>
     
-                </div>
-                <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/site/es/search/">
+        </div>
+        <div class="header-search-bar">
+          <form class="align-self-lg-end" id="search" action="/site/es/search/">
     <div class="input-group">
         <label class="visually-hidden" for="indicator_search">Buscar</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Buscar">
@@ -337,8 +334,8 @@ layout-data-editor
     </div>
 </form>
 
-                </div>
-                <div class="header-toggles d-flex">
+        </div>
+        <div class="header-toggles d-flex">
 
 
 
@@ -365,7 +362,7 @@ layout-data-editor
 
 
 
-                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+          <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-eu list-inline-item">
             <a class="language-toggle-link" href="/site/15-2-1/data/">
@@ -386,13 +383,12 @@ data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
 >A</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
 <div id="top" tabindex=-1></div>
-
 
 <div id="main-content" class="container" role="main">
   <div class="row no-gutters">
@@ -660,12 +656,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250311065158'></script>
+<script src='/site/assets/js/sdg.js?v=20250311144155'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250311065158"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250311144155"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
