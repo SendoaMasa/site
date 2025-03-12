@@ -74,6 +74,8 @@ body {
   .header .logo-header-description {
     display: none;
   }
+}
+@media (max-width: 770px) {
   .o-content-zutabe ul li {
       width: 100%;
       border-bottom: 2px dotted #696969;
