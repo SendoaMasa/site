@@ -1,38 +1,31 @@
 // Enter any custom Sass in this file.
-header {
-  background: none;
-  .container {
-    min-height: 113px;
-    .navbar-default {
-      border: none;
-    }
-  }
+
+body {
+  background: white;
+  padding-top: 0; 
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.42857143;
 }
 
-header .barra_azul_cab {
-  background: #013161 no-repeat scroll left bottom !important;
-  padding-left: 1%;
-}
-/* LOGO HOME */
 
-.wLogoMaster {
-  width: auto;
-}
 
-.logoMaster {
-  position: absolute;
-  top: 50px;
-  /* width: 84%; */
-  left: 1%;
+.header{
+  background-color: #013161;
+  
+}
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
 }
 
-.logoMaster a {
-  display: inline-block;
-  vertical-align: middle;
+.header .logo-header{
+  display: flex;
+  align-items: center;
 }
-/* LOGO HOME - FIN */
-
-.logoMasterDescripcion {
+.header .logo-header-description{
   border-left: 1px solid #fdbd03;
   color: #FFFFFF;
   font-size: 12px;
@@ -43,18 +36,59 @@ header .barra_azul_cab {
   display: inline-block;
   vertical-align: middle;
 }
-#lateralD_ham {
-    position: absolute;
-    right: 0px;
-    top: 50px;
-    padding-right: 1%;
+
+.menu-button{
+  padding-right: 0.5rem;
+}
+.zutabeak{
+  display: none;
+  padding-bottom: 1rem;
+}
+.zutabeak.active{
+  display: flex;
+  justify-content: flex-end;
+}
+.o-content-zutabe li a {
+  font-weight: normal;
+  color: white;
+  font-size: 90%;
+  text-decoration: none;
+}
+.o-content-zutabe li {
+  padding: .3em 0;
+}
+.o-content-zutabe ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+  padding:0 .6em;
 }
 
-body {
-    background: white;
-    padding-top: 0; 
+.o-content-zutabe {
+  border-left: 1px dotted #0263bf;
+  width: 190px;
 }
 
+
+@media (max-width: 420px) {
+  .header .logo-header-description {
+    display: none;
+  }
+  .o-content-zutabe ul li {
+      width: 100%;
+      border-bottom: 2px dotted #696969;
+  }
+  .o-content-zutabe {
+      border-left: none;
+      width: 100%;
+
+  }
+  .zutabeak.active{
+      display: flex;
+      justify-content:flex-start;
+      flex-direction: column;
+  }
+}
 .marcopie {
   padding: 15px 0 15px 0;
   background-color: #013161;
@@ -105,10 +139,4 @@ ul.iconillo {
 
 .tag-my-tag{
     background-color: #fd8d03!important;
-}
-
-@media (max-width: 420px) {
-  .logoMasterDescripcion {
-      display: none;
-  }
 }
