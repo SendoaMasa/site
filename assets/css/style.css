@@ -2888,33 +2888,43 @@ body {
     flex-direction: column; } }
 .marcopie {
   padding: 15px 0 15px 0;
-  background-color: #013161; }
+  background-color: #013161;
+  display: flex; }
+
+.enlaces {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly; }
+
+.piederecho-texto {
+  display: flex;
+  flex-direction: column;
+  text-align: right; }
 
 .piederecho {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 10px;
-  width: 90%;
-  border-top: 0px solid white;
-  text-align: right;
-  /* background: url(/cwImages/2015/aenor.png) top left no-repeat; */ }
+  padding: 10px 30px;
+  width: 50%;
+  border-left: 1px solid white; }
 
-.logoaenorpie {
-  display: inline-block;
-  float: left; }
+.logos-rrss-pie {
+  display: flex;
+  flex-direction: column; }
 
-.piederechopn {
-  color: white;
-  font-weight: bold;
-  font-size: 0.9em; }
+.logos {
+  display: flex; }
+
+.texto-rrss {
+  color: white; }
+
+.bold {
+  font-weight: bold; }
 
 .piederechop {
   color: white;
-  font-size: 0.9em;
-  width: 80%;
-  margin-left: auto; }
-
-.piederechop50 {
-  width: 50%;
-  float: right; }
+  font-size: 0.9em; }
 
 .enlaceblanco {
   color: white !important;
@@ -2923,8 +2933,22 @@ body {
 ul.iconillo {
   list-style-image: url(https://www.eustat.eus/cwImages/2015/listapie.gif); }
 
-.barritaizquierda {
-  border-left: 1px solid white; }
+@media (max-width: 930px) {
+  .marcopie {
+    flex-direction: column;
+    align-items: center; }
 
-.tag-my-tag {
-  background-color: #fd8d03 !important; }
+  .piederecho {
+    border-left: none;
+    border-top: 1px solid white;
+    width: 90%; }
+
+  .enlaces {
+    width: 100%; } }
+@media (max-width: 600px) {
+  .piederecho {
+    flex-direction: column;
+    align-items: center; }
+
+  .piederecho-texto {
+    text-align: center; } }
