@@ -5,7 +5,7 @@
   <div class="header" >
     <div class="header-top">
         <div id="logo" class="logo-header">
-            <a id="logo-link" href="https://www.eustat.eus/indice.html">
+            <a id="logo-link" href="https://{{ page.lang }}.eustat.eus/indice.html">
                 <img src="https://www.eustat.eus/cwImages/2015/logocabecera.png" alt="eustat">
             </a>
             <div class="logo-header-description">
@@ -19,19 +19,19 @@
     <div class="zutabeak">
         <div class="o-content-zutabe">
             <ul>
-                <li><a id="ctl00_Cabecera_cabCOL01_01" data-ajax="false" href="https://www.eustat.eus/estadisticas/opt_0/id_All/temalista.html">Temas</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL01_02" data-ajax="false" href="https://www.eustat.eus/estadisticas/opt_1/id_All/temalista.html">Operaciones</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL01_03" data-ajax="false" href="https://www.eustat.eus/bancopx/spanish/indice.html">Banco de datos</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL01_04" data-ajax="false" onclick="cambiaTemasOperaciones(2);" href="https://www.eustat.eus/indice.html#cy">Coyuntura</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL01_05" data-ajax="false" href="https://www.eustat.eus/municipal/datos_estadisticos/info_territorial_c.asp">Info. municipal</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_01" data-ajax="false" href="https://{{ page.lang }}.eustat.eus/estadisticas/opt_0/id_All/temalista.html">{{ site.data.strings[page.lang].themes }}</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_02" data-ajax="false" href="https://{{ page.lang }}.eustat.eus/estadisticas/opt_1/id_All/temalista.html">{{ site.data.strings[page.lang].operations }}</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_03" data-ajax="false" href="https://{{ page.lang }}.eustat.eus/bancopx/spanish/indice.html">{{ site.data.strings[page.lang].database }}</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_04" data-ajax="false" onclick="cambiaTemasOperaciones(2);" href="https://{{ page.lang }}.eustat.eus/indice.html#cy">{{ site.data.strings[page.lang].situation }}</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL01_05" data-ajax="false" href="https://{{ page.lang }}.eustat.eus/municipal/datos_estadisticos/info_territorial_c.asp">{{ site.data.strings[page.lang].municipal_info }}</a></li>
             </ul>
         </div>
         <div class="o-content-zutabe">
             <ul>
-                <li><a id="ctl00_Cabecera_cabCOL02_01" data-ajax="false" href="https://www.eustat.eus/estadisticas/calendario.html">Calendario</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL02_02" data-ajax="false" href="https://www.eustat.eus/productosServicios/sugerencias.html">Quejas y sugerencias</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL02_03" data-ajax="false" href="https://www.eustat.eusprodserv/info_c.html">Servicio de información</a></li>
-                <li><a id="ctl00_Cabecera_cabCOL02_04" data-ajax="false" href="https://www.eustat.eus/notas_c.html">Servicio de prensa</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL02_01" data-ajax="false" href="https://{{ page.lang }}.eustat.eus/estadisticas/calendario.html">{{ site.data.strings[page.lang].calendar }}</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL02_02" data-ajax="false" href="https://{{ page.lang }}.eustat.eus/productosServicios/sugerencias.html">{{ site.data.strings[page.lang].complaints_suggestions }}</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL02_03" data-ajax="false" href="https://{{ page.lang }}.eustat.eusprodserv/info_c.html">{{ site.data.strings[page.lang].info_service }}</a></li>
+                <li><a id="ctl00_Cabecera_cabCOL02_04" data-ajax="false" href="https://{{ page.lang }}.eustat.eus/notas_c.html">{{ site.data.strings[page.lang].press_service }}</a></li>
             </ul>
         </div>
     </div><!-- zutabeak -->

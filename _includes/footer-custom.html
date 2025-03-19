@@ -4,13 +4,13 @@
           <div class="centradomini">
               <ul class="list-group iconillo rupturasmall">
                   <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL01_01" class="list-group-item2 enlaceblanco"
-                          data-ajax="false" href="https://www.eustat.eus/about/links_c.html">Enlaces</a></li>
+                          data-ajax="false" href="https://{{ page.lang }}.eustat.eus/about/links_c.html">{{ site.data.strings[page.lang].links }}</a></li>
                   <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL01_02" class="list-group-item2 enlaceblanco"
-                          data-ajax="false" href="https://www.eustat.eus/faq_c.html">FAQ</a></li>
+                          data-ajax="false" href="https://{{ page.lang }}.eustat.eus/faq_c.html">{{ site.data.strings[page.lang].faq }}</a></li>
                   <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL01_03" class="list-group-item2 enlaceblanco"
-                          data-ajax="false" href="https://www.eustat.eus/sitemap_c.html">Mapa</a></li>
+                          data-ajax="false" href="https://{{ page.lang }}.eustat.eus/sitemap_c.html">{{ site.data.strings[page.lang].map }}</a></li>
                   <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL01_04" class="list-group-item2 enlaceblanco"
-                          data-ajax="false" href="https://www.eustat.eus/accesibilidad_c.html">Accesibilidad</a>
+                          data-ajax="false" href="https://{{ page.lang }}.eustat.eus/accesibilidad_c.html">{{ site.data.strings[page.lang].accessibility }}</a>
                   </li>
               </ul>
           </div>
@@ -18,11 +18,11 @@
               <div class="Prayamini"></div>
               <ul class="list-group iconillo rupturasmall">
                   <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL02_01" class="list-group-item2 enlaceblanco"
-                          data-ajax="false" href="/about/a_eustat_c.html">Acerca de Eustat</a></li>
+                          data-ajax="false" href="https://{{ page.lang }}.euskadi.eus/about/a_eustat_c.html">{{ site.data.strings[page.lang].about_eustat }}</a></li>
                   <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL02_02" class="list-group-item2 enlaceblanco"
-                          data-ajax="false" href="https://euskadi.eus/">Sede electrónica</a></li>
+                          data-ajax="false" href="https://{{ page.lang }}.euskadi.eus/">{{ site.data.strings[page.lang].electronic_office }}</a></li>
                   <li class="bloquenubessmall"><a id="ctl00_Pie_pieCOL02_03" class="list-group-item2 enlaceblanco"
-                          data-ajax="false" href="https://www.eustat.eus/privacidad_c.html">Privacidad</a></li>
+                          data-ajax="false" href="https://{{ page.lang }}.eustat.eus/privacidad_c.html">{{ site.data.strings[page.lang].privacy }}</a></li>
               </ul>
           </div>
       </div>
@@ -30,17 +30,17 @@
           <div class="logos-rrss-pie">
               <div class="logos">
                   <a id="ctl00_Pie_pieCOL03_07" data-ajax="false"
-                      href="https://www.eustat.eus/about/aenor_c.html"><img
-                          src="https://www.eustat.eus/cwImages/2015/aenor_2022_c.png" alt="AENOR"
+                      href="https://{{ page.lang }}.eustat.eus/about/aenor_c.html"><img
+                          src="https://www.eustat.eus/cwImages/2015/aenor_2022_c.png" alt="{{ site.data.strings[page.lang].aenor }}"
                           style="border-width:0px;"></a>
                   <a id="ctl00_Pie_pieCOL03_07b" data-ajax="false"
-                      href="https://www.eustat.eus/about/aenor_c.html"><img
-                          src="https://www.eustat.eus/cwImages/2015/logo_ENS_2022.png" alt="AENOR"
+                      href="https://{{ page.lang }}.eustat.eus/about/aenor_c.html"><img
+                          src="https://www.eustat.eus/cwImages/2015/logo_ENS_2022.png" alt="{{ site.data.strings[page.lang].aenor }}"
                           style="border-width:0px;"></a>
               </div>
               <div class="rrss">
                   <span class="texto-rrss">
-                      Síganos:
+                    {{ site.data.strings[page.lang].follow_us }}
                   </span>
                   <div class="iconos-rrss">
                       <a href="https://es.linkedin.com/company/eustat" target="_blank" title="LinkedIn"
@@ -58,22 +58,21 @@
                       <a href="https://www.youtube.com/user/eustat1986/" target="_blank" title="Youtube"
                           style="display:inline-block;"><img class="sociales"
                               src="https://www.eustat.eus/cwImages/2015/youtube.png"></a>
-                      <a href="https://www.eustat.eus/web/comun/extractorclobRSS.ashx?id=/rss/novedades_c.xml"
+                      <a href="https://{{ page.lang }}.eustat.eus/web/comun/extractorclobRSS.ashx?id=/rss/novedades_c.xml"
                           target="_blank" title="Rss novedades" style="display:inline-block;"><img
                               class="sociales" src="https://www.eustat.eus/cwImages/2015/rss2.png"></a>
                   </div>
               </div>
           </div>
           <div class="piederecho-texto">
-              <p class="piederechop bold">Eustat - Euskal Estatistika Erakundea - Instituto Vasco de Estadística</p>
-              <p class="piederechop">Eustat es el organismo público que desarrolla, produce y difunde información
-                  estadística oficial de la C.A. de Euskadi</p>
+              <p class="piederechop bold">{{ site.data.strings[page.lang].eustat_full_name }}</p>
+              <p class="piederechop">{{ site.data.strings[page.lang].eustat_description }}</p>
               <p class="piederechop">
-                  c/Donostia - San Sebastián, 1<br>
-                  01010 Vitoria-Gasteiz<br>
-                  Tfno: (+34) 945017500<br>
-                  Fax: (+34) 945017501<br>
-                  webmaster_eustat@eustat.eus
+                {{ site.data.strings[page.lang].address }}<br>
+                {{ site.data.strings[page.lang].postal_code }}<br>
+                {{ site.data.strings[page.lang].phone }}<br>
+                {{ site.data.strings[page.lang].fax }}<br>
+                {{ site.data.strings[page.lang].email }}
               </p>
           </div>
       </div>
