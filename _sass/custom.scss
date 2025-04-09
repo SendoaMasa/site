@@ -8,7 +8,10 @@ body {
   line-height: 1.42857143;
 }
 
-
+/* Regla para alto contraste */
+body.contrast-high .header {
+    background-color: #000000;
+}
 
 .header{
   background-color: #013161;
@@ -93,7 +96,10 @@ body {
 }
 
 
-
+/* Regla para alto contraste */
+body.contrast-high .marcopie {
+    background-color: #000000; 
+}
 
 .marcopie {
   padding: 15px 0 15px 0;
