@@ -2845,7 +2845,8 @@ body.contrast-high .header {
   vertical-align: middle; }
 
 .menu-button {
-  padding-right: 0.5rem; }
+  padding-right: 0.5rem;
+  cursor: pointer; }
 
 .zutabeak {
   display: none;
