@@ -28,6 +28,14 @@ body.contrast-high .header {
   display: flex;
   align-items: center;
 }
+
+.header .logo-header img{
+  width: 9em;
+}
+.header  #euskadieus-logo{
+  width: 9em;
+}
+
 .header .logo-header-description{
   border-left: 1px solid #fdbd03;
   color: #FFFFFF;
