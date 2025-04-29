@@ -77,13 +77,23 @@ frontpage_cards:
     button_link: ''
     rule_color: ''
   - title: frontpage.publicaciones
-    button_label: frontpage.publicaciones_button_label
+    button_label: ''
     button_link: frontpage.publicaciones_link
     content: frontpage.publicaciones_content
     rule_color: ''
   - title: frontpage.recursosUtiles
-    content: frontpage.recursosUtiles_content
-    button_label: frontpage.recursosUtiles_button_label
+    content: >
+
+      [The Global Goals](https://www.globalgoals.org/)
+
+
+      [Implementing the Sustainable Development
+      Goals](https://www.gov.uk/government/publications/implementing-the-sustainable-development-goals/implementing-the-sustainable-development-goals--2)
+     
+
+      <a href="./about/#more-resources" aria-label="More resources">More
+      resources...</a>
+    button_label: ''
     button_link: frontpage.recursosUtiles_link
     rule_color: ''
 frontpage_goals_grid:
