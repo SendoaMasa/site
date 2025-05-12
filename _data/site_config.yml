@@ -150,12 +150,12 @@ map_layers:
 map_options:
   disaggregation_controls: true
   minZoom: 5
-  maxZoom: 10
-  tileURL: ''
+  maxZoom: 14
+  tileURL: 'https://www.geo.euskadi.eus/geoeuskadi/rest/services/U11/WMTS_GRIS/MapServer/WMTS/tile/1.0.0/U11_WMTS_GRIS/default/default028mm/{z}/{y}/{x}.png'
   tileOptions:
     id: ''
     accessToken: ''
-    attribution: My map attribution
+    attribution: <a href="https://www.geo.euskadi.eus/" title="Eusko Jaurlaritza/Gobierno Vasco - geoEuskadi">geoEuskadi</a>
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
