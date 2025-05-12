@@ -141,31 +141,22 @@ logos:
     src: assets/img/en/SDG_logo.png
     alt: Go to homepage
 map_layers:
-  - subfolder: Territorio
-    label: Territorio
+  - subfolder: regions
+    label: indicator.regions
     min_zoom: 5
-    max_zoom: 6
-    staticBorders: true
-  - subfolder: Comarca
-    label: Comarca
-    min_zoom: 7
-    max_zoom: 8
-    staticBorders: true
-  - subfolder: Municipio
-    label: Municipio
-    min_zoom: 9
-    max_zoom: 14
-    staticBorders: true
+    max_zoom: 10
+    staticBorders: false
+  
 map_options:
   disaggregation_controls: true
   minZoom: 5
-  maxZoom: 14
-  tileURL: 'https://www.geo.euskadi.eus/geoeuskadi/rest/services/U11/WMTS_GRIS/MapServer/WMTS/tile/1.0.0/U11_WMTS_GRIS/default/default028mm/{z}/{y}/{x}.png'
+  maxZoom: 10
+  tileURL: ''
   tileOptions:
     id: ''
     accessToken: ''
-    attribution: <a href="https://www.geo.euskadi.eus/" title="Eusko Jaurlaritza/Gobierno Vasco - geoEuskadi">geoEuskadi</a>
-  colorRange: chroma.brewer.BuGn 
+    attribution: My map attribution
+  colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
     weight: 1
@@ -184,7 +175,7 @@ map_options:
     opacity: 1
     fillOpacity: 0
     color: '#172d44'
-    dashArray: ''
+    dashArray: '5,5'
 menu:
   - path: /
     translation_key: general.home
