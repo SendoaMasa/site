@@ -28,6 +28,14 @@ body.contrast-high .header {
   display: flex;
   align-items: center;
 }
+
+.header .logo-header img{
+  width: 9em;
+}
+.header  #euskadieus-logo{
+  width: 9em;
+}
+
 .header .logo-header-description{
   border-left: 1px solid #fdbd03;
   color: #FFFFFF;
@@ -42,6 +50,7 @@ body.contrast-high .header {
 
 .menu-button{
   padding-right: 0.5rem;
+  cursor:pointer;
 }
 .zutabeak{
   display: none;
@@ -69,7 +78,12 @@ body.contrast-high .header {
 
 .o-content-zutabe {
   border-left: 1px dotted #0263bf;
-  width: 190px;
+  width: 200px;
+}
+
+.rrss{
+  padding: 5px 20px 5px 5px;
+  font-size: 14px;
 }
 
 
